@@ -1,3 +1,6 @@
-.DS_Store
-*.ai
-
+git rm --cached *.png
+git rm --cached *.jpg
+git rm --cached *.jpeg
+git add .
+git commit -m "Fixed missing images"
+git push origin main
