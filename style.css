@@ -1,48 +1,23 @@
-/* Background Image */
 body {
-    background-image: url('tandem_grey.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    text-align: center;
+    background-image: url('images/tandem_grey.png');
 }
 
-/* Preloading Images */
-body::before {
-    content: url('tandem_grey.png') url('broken.png') url('clock.png') url('colors.png') url('theCertificate.png') url('thePerks.png');
-    display: none;
-}
-
-/* Image Box */
-#image {
-    height: 517px;
-    width: 780px;
-    margin: 50px auto;
-    background-size: cover;
-    background-position: center;
-}
-
-/* Image Styles */
-.certificate {
-    background-image: url('theCertificate.png');
-    background-color: white;
-    box-shadow: 0 0 5px #888;
-}
-
-.benefits {
-    background-image: url('thePerks.png');
-    background-color: white;
-    box-shadow: 0 0 5px #888;
-}
-
-/* Background Changes */
 .no {
-    background-image: url('broken.png');
+    background-image: url('images/broken.png');
 }
 
 .yes {
-    background-image: url('colors.png');
+    background-image: url('images/colors.png');
 }
 
 .maybe {
-    background-image: url('clock.png');
+    background-image: url('images/clock.png');
+}
+
+.certificate {
+    background-image: url('images/theCertificate.png');
+}
+
+.benefits {
+    background-image: url('images/thePerks.png');
 }
