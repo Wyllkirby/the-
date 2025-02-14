@@ -1,23 +1,68 @@
+/* 🎨 General Styles */
 body {
-    background-image: url('tandem_grey.png');
+    background-image: url('tandem_grey.png'); /* ✅ Image is in the same folder */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
 }
 
+/* 🖼️ Preload Images */
+body::before {
+    content: url('tandem_grey.png') 
+             url('broken.png') 
+             url('clock.png') 
+             url('colors.png')  
+             url('theCertificate.png') 
+             url('thePerks.png');
+    display: none;
+}
+
+/* 🎖️ Certificate Background */
+.certificate {
+    background-color: #fff;
+    background-image: url('theCertificate.png'); /* ✅ No "images/" folder needed */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 5px #888;
+}
+
+/* 🎁 Benefits Background */
+.benefits {
+    background-color: #fff;
+    background-image: url('thePerks.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0 0 5px #888;
+}
+
+/* ❌ "No" Background */
 .no {
     background-image: url('broken.png');
+    background-size: cover;
 }
 
+/* ✅ "Yes" Background */
 .yes {
     background-image: url('colors.png');
+    background-size: cover;
 }
 
+/* ⏳ "Maybe" Background */
 .maybe {
     background-image: url('clock.png');
+    background-size: cover;
 }
 
-.certificate {
-    background-image: url('theCertificate.png');
-}
-
-.benefits {
-    background-image: url('thePerks.png');
+/* 📸 Image Container */
+#image {
+    height: 517px;
+    width: 780px;
+    margin: 50px auto;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
