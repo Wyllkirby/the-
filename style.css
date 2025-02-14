@@ -3,11 +3,11 @@ body {
 }
 
 .no {
-    background-image: url('/broken.png');
+    background-image: url('broken.png');
 }
 
 .yes {
-    background-image: url('/colors.png');
+    background-image: url('colors.png');
 }
 
 .maybe {
